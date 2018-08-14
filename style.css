@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+body{
+	background-color:#f74909;
+}
+.devtest{
+	font-family: 'Comfortaa', cursive;
+	font-size:100px;
+	color:#ffffff;
+	position:absolute;
+	top:35%;
+	left:10%;
+	transform: perspective(1000px) rotateX(30deg);
+}
+
+
+.devtest .char1,
+.devtest .char2,
+.devtest .char3,
+.devtest .char4,
+.devtest .char5,
+.devtest .char6,
+.devtest .char7,
+.devtest .char8{
+	display: inline-block;
+	padding: 0 10px;
+	transition: .5s;
+	text-shadow: 0 5px 2px rgba(0, 0, 0, .1);
+	box-shadow: 10px 50px 20px rgba(0, 0, 0, .1);
+	filter:blur(.5px);	
+}
+
+
+
+.devtest .char1,
+.devtest .char3,
+.devtest .char5,
+.devtest .char7{
+	background:#f7a92c;
+	transform:skewY(-15deg);
+}
+
+.devtest .char2,
+.devtest .char4,
+.devtest .char6,
+.devtest .char8{
+	background:#f7a118;
+	transform:skewY(15deg);
+}
+
+.devtest:hover .char1,
+.devtest:hover .char2,
+.devtest:hover .char3,
+.devtest:hover .char4,
+.devtest:hover .char5,
+.devtest:hover .char6,
+.devtest:hover .char7,
+.devtest:hover .char8{
+
+	background:#f7a92c;
+	transform: skewY(0deg);
+	filter: blur(0px);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+.devtest:hover{
+
+	transform: perspective(0px) rotateX(0deg);
+}
